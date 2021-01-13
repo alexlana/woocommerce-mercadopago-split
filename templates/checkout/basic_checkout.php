@@ -10,8 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div id="framePayments" class="mp-col-md-12">
         <div class="frame-tarjetas">
             <p class="mp-subtitle-basic-checkout">
-                <?= __('Credit cards', 'woocommerce-mercadopago') ?>
-                <span class="mp-badge-checkout"><?=__('Until', 'woocommerce-mercadopago')?> <?= $installments ?> <?=__($str_cuotas, 'woocommerce-mercadopago')?></span>
+                <?= __('Credit cards', 'woocommerce-mercadopago-split') ?>
+                <span class="mp-badge-checkout"><?=__('Until', 'woocommerce-mercadopago-split')?> <?= $installments ?> <?=__($str_cuotas, 'woocommerce-mercadopago-split')?></span>
             </p>
 
             <?php foreach($tarjetas as $tarjeta): ?>
@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php if($debito != 0): ?>
     <div id="framePayments" class="mp-col-md-6 mp-pr-15">
         <div class="frame-tarjetas">
-            <p class="submp-title-checkout"><?=__('Debit card', 'woocommerce-mercadopago')?></p>
+            <p class="submp-title-checkout"><?=__('Debit card', 'woocommerce-mercadopago-split')?></p>
 
             <?php foreach($tarjetas as $tarjeta): ?>
               <?php if ($tarjeta['type'] == 'debit_card' || $tarjeta['type'] == 'prepaid_card'): ?>
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php if($efectivo != 0): ?>
     <div id="framePayments" class="mp-col-md-6">
         <div class="frame-tarjetas">
-            <p class="submp-title-checkout"><?=__('Payments in cash', 'woocommerce-mercadopago')?></p>
+            <p class="submp-title-checkout"><?=__('Payments in cash', 'woocommerce-mercadopago-split')?></p>
 
             <?php foreach($tarjetas as $tarjeta): ?>
               <?php if ($tarjeta['type'] != 'credit_card' && $tarjeta['type'] != 'debit_card' && $tarjeta['type'] != 'prepaid_card'): ?>
@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="mp-col-md-12 mp-pt-20">
         <div class="mp-redirect-frame">
             <img src="<?= $cho_image ?>" class="mp-img-fluid mp-img-redirect" alt=""/>
-            <p><?=__('We take you to our site to complete the payment', 'woocommerce-mercadopago')?></p>
+            <p><?=__('We take you to our site to complete the payment', 'woocommerce-mercadopago-split')?></p>
         </div>
     </div>
     <?php endif; ?>

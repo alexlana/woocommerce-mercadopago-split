@@ -88,7 +88,7 @@
          */
         function mercadoPagoFormHandlerTicket() {
 
-            if (!document.getElementById('payment_method_woo-mercado-pago-ticket').checked) {
+            if (!document.getElementById('payment_method_woo-mercado-pago-split-ticket').checked) {
                 return true;
             }
 
@@ -114,7 +114,7 @@
         }
 
         // Process when submit the checkout form.
-        $('form.checkout').on('checkout_place_order_woo-mercado-pago-ticket', function () {
+        $('form.checkout').on('checkout_place_order_woo-mercado-pago-split-ticket', function () {
             return mercadoPagoFormHandlerTicket();
         });
 

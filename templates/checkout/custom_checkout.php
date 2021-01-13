@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- Links cards can pay | current promotions only Argentina -->
 		<div class="mp-frame-links">
 			<a class="mp-checkout-link mp-pr-10" id="button-show-payments">
-				<?= __('With what cards can I pay', 'woocommerce-mercadopago') ?> ⌵
+				<?= __('With what cards can I pay', 'woocommerce-mercadopago-split') ?> ⌵
 			</a>
 			<?php if ($site_id == 'MLA') : ?>
 				<span id="mp_promotion_link"> | </span>
 				<a href="https://www.mercadopago.com.ar/cuotas" id="mp_checkout_link" class="mp-checkout-link mp-pl-10" target="_blank">
-					<?= __('See current promotions', 'woocommerce-mercadopago') ?>
+					<?= __('See current promotions', 'woocommerce-mercadopago-split') ?>
 				</a>
 			<?php endif; ?>
 		</div>
@@ -26,14 +26,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="mp-col-md-12">
 				<div class="frame-tarjetas">
 					<?php if (count($credit_card) != 0) : ?>
-						<p class="submp-title-checkout-custom"><?= __('Credit cards', 'woocommerce-mercadopago') ?></p>
+						<p class="submp-title-checkout-custom"><?= __('Credit cards', 'woocommerce-mercadopago-split') ?></p>
 						<?php foreach ($credit_card as $credit_image) : ?>
 							<img src="<?= $credit_image ?>" class="mp-img-fluid mp-img-tarjetas" alt="" />
 						<?php endforeach; ?>
 					<?php endif; ?>
 
 					<?php if (count($debit_card) != 0) : ?>
-						<p class="submp-title-checkout-custom mp-pt-10"><?= __('Debit card', 'woocommerce-mercadopago') ?></p>
+						<p class="submp-title-checkout-custom mp-pt-10"><?= __('Debit card', 'woocommerce-mercadopago-split') ?></p>
 						<?php foreach ($debit_card as $debit_image) : ?>
 							<img src="<?= $debit_image ?>" class="mp-img-fluid mp-img-tarjetas" alt="" />
 						<?php endforeach; ?>
@@ -46,18 +46,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php if ($coupon_mode == 'yes') : ?>
 			<div class="mp-col-md-12" id="mercadopago-form-coupon">
 				<div class="frame-tarjetas mp-text-justify">
-					<p class="mp-subtitle-custom-checkout"><?= __('Enter your discount coupon', 'woocommerce-mercadopago') ?></p>
+					<p class="mp-subtitle-custom-checkout"><?= __('Enter your discount coupon', 'woocommerce-mercadopago-split') ?></p>
 
 					<div class="mp-row-checkout mp-pt-10">
 						<div class="mp-col-md-9 mp-pr-15">
-							<input type="text" class="mp-form-control" id="couponCode" name="mercadopago_custom[coupon_code]" autocomplete="off" maxlength="24" placeholder="<?= __('Enter your coupon', 'woocommerce-mercadopago') ?>" />
+							<input type="text" class="mp-form-control" id="couponCode" name="mercadopago_custom[coupon_code]" autocomplete="off" maxlength="24" placeholder="<?= __('Enter your coupon', 'woocommerce-mercadopago-split') ?>" />
 						</div>
 
 						<div class="mp-col-md-3">
-							<input type="button" class="mp-button mp-pointer" id="applyCoupon" value="<?= esc_html__('Apply', 'woocommerce-mercadopago'); ?>">
+							<input type="button" class="mp-button mp-pointer" id="applyCoupon" value="<?= esc_html__('Apply', 'woocommerce-mercadopago-split'); ?>">
 						</div>
 						<div class="mp-discount mp-col-md-9 mp-pr-15" id="mpCouponApplyed"></div>
-						<span class="mp-error" id="mpCouponError"><?= __('The code you entered is incorrect', 'woocommerce-mercadopago') ?></span>
+						<span class="mp-error" id="mpCouponError"><?= __('The code you entered is incorrect', 'woocommerce-mercadopago-split') ?></span>
 					</div>
 				</div>
 			</div>
@@ -66,59 +66,59 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="mp-col-md-12">
 			<div class="frame-tarjetas">
 				<!-- Title enter your card details -->
-				<p class="mp-subtitle-custom-checkout"><?= __('Enter your card details', 'woocommerce-mercadopago') ?></p>
+				<p class="mp-subtitle-custom-checkout"><?= __('Enter your card details', 'woocommerce-mercadopago-split') ?></p>
 
 				<div id="mercadopago-form">
 					<!-- Input Card number -->
 					<div class="mp-row-checkout mp-pt-10">
 						<div class="mp-col-md-12">
-							<label for="mp-card-number" class="mp-label-form"><?= esc_html__('Card number', 'woocommerce-mercadopago'); ?> <em>*</em></label>
+							<label for="mp-card-number" class="mp-label-form"><?= esc_html__('Card number', 'woocommerce-mercadopago-split'); ?> <em>*</em></label>
 							<input type="text" onkeyup="mpCreditMaskDate(this, mpMcc);" class="mp-form-control mp-mt-5" id="mp-card-number" data-checkout="cardNumber" autocomplete="off" maxlength="23" />
 
-							<span class="mp-error mp-mt-5" id="mp-error-205" data-main="#mp-card-number"><?= esc_html__('Card number', 'woocommerce-mercadopago'); ?></span>
-							<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#mp-card-number"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-205" data-main="#mp-card-number"><?= esc_html__('Card number', 'woocommerce-mercadopago-split'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#mp-card-number"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago-split'); ?></span>
 						</div>
 					</div>
 					<!-- Input Name and Surname -->
 					<div class="mp-row-checkout mp-pt-10" id="mp-card-holder-div">
 						<div class="mp-col-md-12">
-							<label for="mp-card-holder-name" class="mp-label-form"><?= esc_html__('Name and surname of the cardholder', 'woocommerce-mercadopago'); ?> <em>*</em></label>
+							<label for="mp-card-holder-name" class="mp-label-form"><?= esc_html__('Name and surname of the cardholder', 'woocommerce-mercadopago-split'); ?> <em>*</em></label>
 							<input type="text" class="mp-form-control mp-mt-5" id="mp-card-holder-name" data-checkout="cardholderName" autocomplete="off" />
 
-							<span class="mp-error mp-mt-5" id="mp-error-221" data-main="#mp-card-holder-name"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago'); ?></span>
-							<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#mp-card-holder-name"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-221" data-main="#mp-card-holder-name"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago-split'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#mp-card-holder-name"><?= esc_html__('Invalid Card Number', 'woocommerce-mercadopago-split'); ?></span>
 						</div>
 					</div>
 
 					<div class="mp-row-checkout mp-pt-10">
 						<!-- Input expiration date -->
 						<div class="mp-col-md-6 mp-pr-15">
-							<label for="mp-card-expiration-date" class="mp-label-form"><?= esc_html__('Expiration date', 'woocommerce-mercadopago'); ?> <em>*</em></label>
+							<label for="mp-card-expiration-date" class="mp-label-form"><?= esc_html__('Expiration date', 'woocommerce-mercadopago-split'); ?> <em>*</em></label>
 							<input type="text" onkeyup="mpCreditMaskDate(this, mpDate);" onblur="mpValidateMonthYear()" class="mp-form-control mp-mt-5" id="mp-card-expiration-date" data-checkout="cardExpirationDate" autocomplete="off" placeholder="MM/AAAA" maxlength="7" />
 							<input type="hidden" id="cardExpirationMonth" data-checkout="cardExpirationMonth">
 							<input type="hidden" id="cardExpirationYear" data-checkout="cardExpirationYear">
-							<span class="mp-error mp-mt-5" id="mp-error-208" data-main="#mp-card-expiration-date"><?= esc_html__('Invalid Expiration Date', 'woocommerce-mercadopago'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-208" data-main="#mp-card-expiration-date"><?= esc_html__('Invalid Expiration Date', 'woocommerce-mercadopago-split'); ?></span>
 						</div>
 						<!-- Input Security Code -->
 						<div class="mp-col-md-6">
-							<label for="mp-security-code" class="mp-label-form"><?= esc_html__('Security code', 'woocommerce-mercadopago'); ?> <em>*</em></label>
+							<label for="mp-security-code" class="mp-label-form"><?= esc_html__('Security code', 'woocommerce-mercadopago-split'); ?> <em>*</em></label>
 							<input type="text" onkeyup="mpCreditMaskDate(this, mpInteger);" class="mp-form-control mp-mt-5" id="mp-security-code" data-checkout="securityCode" autocomplete="off" maxlength="4" />
-							<p class="mp-desc mp-mt-5 mp-mb-0" data-main="#mp-security-code"><?= esc_html__('Last 3 numbers on the back', 'woocommerce-mercadopago'); ?></p>
-							<span class="mp-error mp-mt-5" id="mp-error-224" data-main="#mp-security-code"><?= esc_html__('Check the informed security code.', 'woocommerce-mercadopago'); ?></span>
-							<span class="mp-error mp-mt-5" id="mp-error-E302" data-main="#mp-security-code"><?= esc_html__('Check the informed security code.', 'woocommerce-mercadopago'); ?></span>
+							<p class="mp-desc mp-mt-5 mp-mb-0" data-main="#mp-security-code"><?= esc_html__('Last 3 numbers on the back', 'woocommerce-mercadopago-split'); ?></p>
+							<span class="mp-error mp-mt-5" id="mp-error-224" data-main="#mp-security-code"><?= esc_html__('Check the informed security code.', 'woocommerce-mercadopago-split'); ?></span>
+							<span class="mp-error mp-mt-5" id="mp-error-E302" data-main="#mp-security-code"><?= esc_html__('Check the informed security code.', 'woocommerce-mercadopago-split'); ?></span>
 						</div>
 					</div>
 
 					<div class="mp-col-md-12">
 						<div class="frame-tarjetas">
 							<!-- Title installments -->
-							<p class="mp-subtitle-custom-checkout"><?= __('In how many installments do you want to pay', 'woocommerce-mercadopago') ?></p>
+							<p class="mp-subtitle-custom-checkout"><?= __('In how many installments do you want to pay', 'woocommerce-mercadopago-split') ?></p>
 
 							<!-- Select issuer -->
 							<div class="mp-row-checkout mp-pt-10">
 								<div id="mp-issuer-div" class="mp-col-md-4 mp-pr-15">
 									<div class="mp-issuer">
-										<label for="mp-issuer" class="mp-label-form"><?= esc_html__('Issuer', 'woocommerce-mercadopago'); ?> </label>
+										<label for="mp-issuer" class="mp-label-form"><?= esc_html__('Issuer', 'woocommerce-mercadopago-split'); ?> </label>
 										<select class="mp-form-control mp-pointer mp-mt-5" id="mp-issuer" data-checkout="issuer" name="mercadopago_custom[issuer]"></select>
 									</div>
 								</div>
@@ -128,11 +128,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<?php if ($currency_ratio != 1) : ?>
 										<label for="installments" class="mp-label-form">
 											<div class="mp-tooltip">
-												<?= esc_html__('', 'woocommerce-mercadopago'); ?>
+												<?= esc_html__('', 'woocommerce-mercadopago-split'); ?>
 												<span class="mp-tooltiptext">
 													<?=
-															esc_html__('Converted payment of', 'woocommerce-mercadopago') . " " .
-																$woocommerce_currency . " " . esc_html__('for', 'woocommerce-mercadopago') . " " .
+															esc_html__('Converted payment of', 'woocommerce-mercadopago-split') . " " .
+																$woocommerce_currency . " " . esc_html__('for', 'woocommerce-mercadopago-split') . " " .
 																$account_currency;
 														?>
 												</span>
@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 											<em>*</em>
 										</label>
 									<?php else : ?>
-										<label for="mp-installments" class="mp-label-form"><?= __('Select the number of installment', 'woocommerce-mercadopago') ?></label>
+										<label for="mp-installments" class="mp-label-form"><?= __('Select the number of installment', 'woocommerce-mercadopago-split') ?></label>
 									<?php endif; ?>
 
 									<select class="mp-form-control mp-pointer mp-mt-5" id="mp-installments" data-checkout="installments" name="mercadopago_custom[installments]"></select>
@@ -159,24 +159,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div id="mp-doc-div" class="mp-col-md-12 mp-doc">
 						<div class="frame-tarjetas">
 							<!-- Title document -->
-							<p class="mp-subtitle-custom-checkout"><?= __('Enter your document number', 'woocommerce-mercadopago') ?></p>
+							<p class="mp-subtitle-custom-checkout"><?= __('Enter your document number', 'woocommerce-mercadopago-split') ?></p>
 
 							<div id="mp-doc-type-div" class="mp-row-checkout mp-pt-10">
 								<!-- Select Doc Type -->
 								<div class="mp-col-md-4 mp-pr-15">
 									<label for="docType" class="mp-label-form">
-                                        <?= esc_html__('Type', 'woocommerce-mercadopago'); ?>
+                                        <?= esc_html__('Type', 'woocommerce-mercadopago-split'); ?>
                                     </label>
 									<select id="docType" class="mp-form-control mp-pointer mp-mt-04rem" data-checkout="docType"></select>
 								</div>
 
 								<!-- Input Doc Number -->
 								<div id="mp-doc-number-div" class="mp-col-md-8">
-									<label for="docNumber" class="mp-label-form"><?= esc_html__('Document number', 'woocommerce-mercadopago'); ?> <em>*</em></label>
+									<label for="docNumber" class="mp-label-form"><?= esc_html__('Document number', 'woocommerce-mercadopago-split'); ?> <em>*</em></label>
 									<input type="text" class="mp-form-control mp-mt-04rem" id="docNumber" data-checkout="docNumber" autocomplete="off" />
-									<p class="mp-desc mp-mt-5 mp-mb-0" data-main="#mp-security-code"><?= esc_html__('Only numbers', 'woocommerce-mercadopago'); ?></p>
-									<span class="mp-error mp-mt-5" id="mp-error-324" data-main="#docNumber"><?= esc_html__('Invalid Document Number', 'woocommerce-mercadopago'); ?></span>
-									<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#docNumber"><?= esc_html__('Invalid Document Number', 'woocommerce-mercadopago'); ?></span>
+									<p class="mp-desc mp-mt-5 mp-mb-0" data-main="#mp-security-code"><?= esc_html__('Only numbers', 'woocommerce-mercadopago-split'); ?></p>
+									<span class="mp-error mp-mt-5" id="mp-error-324" data-main="#docNumber"><?= esc_html__('Invalid Document Number', 'woocommerce-mercadopago-split'); ?></span>
+									<span class="mp-error mp-mt-5" id="mp-error-E301" data-main="#docNumber"><?= esc_html__('Invalid Document Number', 'woocommerce-mercadopago-split'); ?></span>
 								</div>
 							</div>
 						</div>
@@ -186,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<div class="frame-tarjetas">
 							<div class="mp-row-checkout">
 								<p class="mp-obrigatory">
-									<em>*</em> <?= esc_html__('Obligatory field', 'woocommerce-mercadopago'); ?>
+									<em>*</em> <?= esc_html__('Obligatory field', 'woocommerce-mercadopago-split'); ?>
 								</p>
 							</div>
 						</div>

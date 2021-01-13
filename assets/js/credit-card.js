@@ -782,7 +782,7 @@
         return true;
       }
 
-      if (!document.getElementById('payment_method_woo-mercado-pago-custom').checked) {
+      if (!document.getElementById('payment_method_woo-mercado-pago-split-custom').checked) {
         return true;
       }
 
@@ -794,7 +794,7 @@
     }
 
     // Process when submit the checkout form.
-    $('form.checkout').on('checkout_place_order_woo-mercado-pago-custom', function () {
+    $('form.checkout').on('checkout_place_order_woo-mercado-pago-split-custom', function () {
       return mercadoPagoFormHandler();
     });
 
