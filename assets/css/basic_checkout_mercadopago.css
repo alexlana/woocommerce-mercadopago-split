@@ -1,0 +1,585 @@
+.mp-pt-20 {
+    padding-top: 20px !important;
+}
+
+.mp-pt-5 {
+    padding-top: 5px !important;
+}
+
+.mp-pt-15 {
+    padding-top: 15px !important;
+}
+
+.mp-pt-10 {
+    padding-top: 10px !important;
+}
+
+.mp-pt-0{
+    padding-top: 0px !important;
+}
+
+.mp-pt-30 {
+    padding-top: 30px !important;
+}
+
+.mp-pb-15 {
+    padding-bottom: 15px !important;
+}
+
+.mp-pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.mp-pb-30 {
+    padding-bottom: 30px !important;
+}
+
+.mp-pl-10 {
+    padding-left: 10px !important;
+}
+
+.mp-pr-10 {
+    padding-right: 10px !important;
+}
+
+.mp-pr-15 {
+    padding-right: 15px !important;
+}
+
+.mp-mt-5 {
+    margin-top: 5px !important;
+}
+
+.mp-mt-03rem{
+    margin-top: 0.3rem !important;
+}
+
+.mp-mt-04rem{
+    margin-top: 0.4rem !important;
+}
+
+.mp-mt-05rem{
+    margin-top: 0.5rem !important;
+}
+
+.mp-mt-06rem{
+    margin-top: 0.6rem !important;
+}
+
+.mp-mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mp-mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mp-mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mp-mt-20 {
+    margin-top: 20px !important;
+}
+
+.mp-display-inherit {
+    display: inherit !important;
+}
+
+.mp-pointer {
+    cursor: pointer!important;
+}
+
+.mp-text-center{
+    text-align: center !important;
+}
+
+.mp-text-justify{
+    text-align: justify !important;
+}
+
+.mp-min-hg{
+    min-height: 40px !important;
+}
+
+.mp-row-checkout {
+    width: 100%;
+    display: inline-block;
+}
+
+.mp-col-md-12 {
+    width: 100%;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left !important;
+}
+
+.mp-col-md-9 {
+    flex: 0 0 75%;
+    width: 75%;
+    float: left;
+}
+
+.mp-col-md-8 {
+    flex: 0 0 66.666667%;
+    width: 66.666667%;
+    float: left;
+}
+
+.mp-col-md-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left !important;
+}
+
+.mp-col-md-4 {
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+    float: left;
+}
+
+.mp-col-md-3 {
+    flex: 0 0 25%;
+    width: 25%;
+    float: left;
+}
+
+.mp-img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.mp-panel-checkout {
+    background-color: #fff;
+    padding: 10px 15px 25px;
+}
+
+.mp-title-checkout {
+    padding: 15px 0 0px;
+    font-family: sans-serif;
+    font-size: 1.20rem !important;
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25 !important;
+    letter-spacing: normal;
+    color: #04204c;
+    margin: 0 !important;
+}
+
+.mp-title-checkout::before {
+    content: "" !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.submp-title-checkout {
+    font-size: 14px !important;
+    font-family: sans-serif !important;
+    color: #7a7a7a;
+    font-weight: 400;
+    padding: 20px 0px 0px;
+    margin: 0px 0 5px !important;
+    text-transform: uppercase;
+}
+
+.mp-subtitle-basic-checkout {
+    font-size: 14px !important;
+    font-family: sans-serif !important;
+    color: #7a7a7a;
+    font-weight: 400;
+    padding: 0.625em 0px 0px;
+    margin: 0px 0 5px !important;
+    text-transform: uppercase;
+}
+
+.mp-badge-checkout {
+    font-size: 15px !important;
+    font-family: sans-serif !important;
+    padding: 5px 10px;
+    margin-left: 5px;
+    display: inline-block;
+    background-color: #2ec74b;
+    color: #fff;
+    text-transform: none;
+    border-radius: 2px;
+}
+
+.mp-img-tarjetas {
+    padding: 8px !important;
+    max-height: 35px !important; 
+    width: auto !important;
+    /* adaptation for all themes */
+    float: none !important;
+    position: relative !important;
+    right: 0px !important;
+    border: inherit !important;
+    display: inline-block !important;
+}
+
+.mp-img-redirect{
+    padding: 8px !important;
+    max-height: 6.250em !important; 
+    width: auto !important;
+    /* adaptation for all themes */
+    float: none !important;
+    position: relative !important;
+    right: 0px !important;
+    border: inherit !important;
+    display: inline-block !important;
+}
+
+.mp-img-ticket {
+    padding: 0px 8px !important;
+    max-height: 35px !important; 
+    width: auto !important;
+    /* adaptation for all themes */
+    float: left !important;
+    position: relative !important;
+    right: 0px !important;
+    border: inherit !important;
+}
+
+.mp-redirect-frame {
+    width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 25px 20px 20px;
+    display: inline-block;
+}
+
+.mp-redirect-frame img {
+    max-width: 160px !important;
+}
+
+.mp-redirect-frame p {
+    padding-top: 15px !important;
+    margin-top: 0px !important;
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 1.71 !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: #333333 !important;
+}
+
+/* ----- Custom Checkout ----- */
+
+.mp-panel-custom-checkout {
+    background-color: #fff;
+    padding: 20px 15px 0px;
+}
+
+.mp-subtitle-custom-checkout {
+    font-size: 17px !important;
+    font-family: sans-serif !important;
+    color: #04204c;
+    font-weight: 600;
+    padding: 20px 0px 0px;
+    margin: 0px 0 5px !important;
+}
+
+.mp-subtitle-ticket-checkout {
+    font-size: 16px !important;
+    font-family: sans-serif !important;
+    color: #04204c;
+    font-weight: 600;
+    padding: 0px 0px 0px;
+    margin: 0px 0 5px !important;
+}
+
+
+.mp-form-control {
+    font-family: sans-serif !important;
+    width: 100%;
+    height: 40px !important;
+    border-radius: 5px !important;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    background-color: #fff !important;
+    border: 1px solid #d1d1d1 !important;
+    margin-bottom: 0 !important;
+}
+
+.mp-form-control-error {
+    border: 2px solid #f04449 !important;
+}
+
+.mp-form-control-check {
+    margin: 0px 10px 0 0 !important;
+    font-family: sans-serif !important;
+    border-radius: 5px !important;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    background-color: #fff !important;
+    border: 1px solid #d1d1d1 !important;
+    float: left;
+}
+
+.mp-button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px !important;
+    color: #fff !important;
+    background-color: #3483fa !important;
+    text-transform: none !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1 !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+}
+
+.mp-button:hover{
+  opacity: 0.8;
+}
+
+.mp-error {
+    font-family: sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #f04449 !important;
+    display: none;
+}
+
+.mp-desc {
+    font-family: sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.mp-label-form-check {
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.8) !important;
+    vertical-align: baseline !important;
+}
+
+.mp-label-form {
+    font-family: sans-serif !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.mp-label-form em {
+    font-size: 18px !important;
+    color: #f04449 !important;
+    font-family: "Merriweather, Georgia";
+    position: absolute;
+    margin: -3px 0 0 3px;
+}
+
+.mp-obrigatory {
+    font-family: sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #f04449 !important;
+    padding-top: 10px;
+}
+
+.mp-obrigatory em {
+    font-size: 18px !important;
+    color: #f04449 !important;
+    margin: -2px 5px 0 0px;
+    font-family: "Merriweather, Georgia";
+    float: left;
+}
+
+.mp-frame-links {
+    display: inline-flex;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.mp-checkout-link {
+    font-family: sans-serif !important;
+    font-size: 14px;
+    text-decoration: none !important;
+    vertical-align: middle;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.mp-frame-payments {
+    display: none;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+    width: 100%;
+}
+
+.submp-title-checkout-custom {
+    font-size: 13px !important;
+    font-family: sans-serif !important;
+    color: #7a7a7a;
+    font-weight: 400;
+    padding: 00px 0px 0px;
+    margin: 0px 0 5px !important;
+    text-transform: uppercase;
+}
+
+.mp-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.mp-tooltip .mp-tooltiptext {
+  visibility: hidden;
+  background: #3483fa;
+  color: #fff;
+  padding: 5px 0;
+  position: absolute;
+  width: 250px;
+  text-align: center;
+  margin: -20px 0 0 100px;
+  font-size: 12px;
+}
+
+.mp-tooltip .mp-tooltiptext:before {
+  border: 6px solid transparent;
+  border-right-color: #3483fa;
+  content: "";
+  left: -12px;
+  position: absolute;
+  top: 5px;
+}
+
+.mp-tooltip:hover .mp-tooltiptext {
+    visibility: visible;
+}
+
+/* ----- Ticket ----- */
+.mp-erro_febraban, .mp_error_docnumber {
+    font-family: sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #f04449 !important;
+    margin-top: 5px;
+    display: none;
+}
+
+.mp-subtitle-ticket-checkout {
+    font-size: 16px !important;
+    font-family: sans-serif !important;
+    color: #04204c;
+    font-weight: 600;
+    margin: 0px 0 5px !important;
+}
+
+.mp-ticket-name{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.mp-ticket-payments{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+#mp-box-input-tax-cft {
+    margin-top: 4px;
+}
+
+#mp-tax-tea-text {
+    color: #797979;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
+
+#mp-tax-cft-text {
+    font-size: 27px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #868686;
+}
+
+#mp_socialname_label{
+    display: none;
+}
+
+#mp_cnpj_label{
+    display: none;
+}
+
+#mp-doc-div {
+    display: none;
+}
+
+#mp-doc-type-div {
+    display: none;
+}
+
+#mp-doc-number-div {
+    display: none;
+}
+
+#mp-issuer-div {
+    display: none;
+}
+
+#mp-card-holder-div {
+    display: none;
+}
+
+.mp-discount {    
+    border-style: solid;
+    border-width: thin;
+    border-color: #009EE3;
+    padding: 8px 8px 8px 8px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #333333;
+    display: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    clear: both;
+    float: left;
+}
