@@ -49,7 +49,7 @@ if (!class_exists('WC_WooMercadoPagoSplit_Init')) {
 // curl_setopt($ch, CURLOPT_URL, 'https://api.mercadopago.com/users/test_user');
 // curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 // 	'Content-Type: application/json',
-// 	'Authorization: Bearer APP_USR-689232386237439-121601-5bfa83dc93c9f20756f22d1abac1263d-135168024',
+// 	'Authorization: Bearer APP_USR-',
 // ));
 // curl_setopt($ch, CURLOPT_POST, true);
 // curl_setopt($ch, CURLOPT_POSTFIELDS, '{"site_id":"MLB"}');
